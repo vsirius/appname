@@ -18863,3 +18863,278 @@ Tasks: TOP => environment
   INFO [b20026a6] Running /usr/bin/env echo "Branch master (at 09a4fda46de5201424c7876d172726fcc1520d02) deployed as release 20170503102642 by sirius" >> /data/testapp/revisions.log as deploy@54.87.190.157
  DEBUG [b20026a6] Command: cd /data/testapp/releases && /usr/bin/env echo "Branch master (at 09a4fda46de5201424c7876d172726fcc1520d02) deployed as release 20170503102642 by sirius" >> /data/testapp/revisions.log
   INFO [b20026a6] Finished in 0.262 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 12:10:22 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8b1eac11] Running /usr/bin/env mkdir -p /tmp as deploy@54.87.190.157
+ DEBUG [8b1eac11] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8b1eac11] Finished in 3.643 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-testapp-production-sirius.sh 0.0%
+  INFO Uploading /tmp/git-ssh-testapp-production-sirius.sh 100.0%
+  INFO [7bf948f0] Running /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh as deploy@54.87.190.157
+ DEBUG [7bf948f0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh
+  INFO [7bf948f0] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [1ad0f129] Running /usr/bin/env git ls-remote git@github.com:vsirius/appname.git HEAD as deploy@54.87.190.157
+ DEBUG [1ad0f129] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git ls-remote git@github.com:vsirius/appname.git HEAD )
+ DEBUG [1ad0f129] 	57f7661399913a8f0cc6f9e53a951c8c4a2c1982	HEAD
+  INFO [1ad0f129] Finished in 0.803 seconds with exit status 0 (successful).
+  INFO [dcdb330f] Running /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases as deploy@54.87.190.157
+ DEBUG [dcdb330f] Command: /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases
+  INFO [dcdb330f] Finished in 0.308 seconds with exit status 0 (successful).
+  INFO [58a9bd9f] Running /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree as deploy@54.87.190.157
+ DEBUG [58a9bd9f] Command: /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree
+  INFO [58a9bd9f] Finished in 0.264 seconds with exit status 0 (successful).
+  INFO [cd8b918c] Running /usr/bin/env mkdir -p /data/testapp/shared/config as deploy@54.87.190.157
+ DEBUG [cd8b918c] Command: /usr/bin/env mkdir -p /data/testapp/shared/config
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-05-04 12:12:00 +0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [390ccace] Running /usr/bin/env mkdir -p /tmp as deploy@52.87.162.52
+ DEBUG [390ccace] Command: /usr/bin/env mkdir -p /tmp
+  INFO [390ccace] Finished in 2.268 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-testapp-production-sirius.sh 0.0%
+  INFO Uploading /tmp/git-ssh-testapp-production-sirius.sh 100.0%
+  INFO [3a718c3e] Running /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh as deploy@52.87.162.52
+ DEBUG [3a718c3e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-testapp-production-sirius.sh
+  INFO [3a718c3e] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [6308852b] Running /usr/bin/env git ls-remote git@github.com:vsirius/appname.git HEAD as deploy@52.87.162.52
+ DEBUG [6308852b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git ls-remote git@github.com:vsirius/appname.git HEAD )
+ DEBUG [6308852b] 	57f7661399913a8f0cc6f9e53a951c8c4a2c1982	HEAD
+  INFO [6308852b] Finished in 0.732 seconds with exit status 0 (successful).
+  INFO [09ef51b7] Running /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases as deploy@52.87.162.52
+ DEBUG [09ef51b7] Command: /usr/bin/env mkdir -p /data/testapp/shared /data/testapp/releases
+  INFO [09ef51b7] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [52168d2e] Running /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree as deploy@52.87.162.52
+ DEBUG [52168d2e] Command: /usr/bin/env mkdir -p /data/testapp/shared/tmp/sockets /data/testapp/shared/log /data/testapp/shared/config/puma /data/testapp/shared/public/spree
+  INFO [52168d2e] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [fe123eb1] Running /usr/bin/env mkdir -p /data/testapp/shared/config as deploy@52.87.162.52
+ DEBUG [fe123eb1] Command: /usr/bin/env mkdir -p /data/testapp/shared/config
+  INFO [fe123eb1] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [cc835c36] Running [ -f /data/testapp/shared/config/database.yml ] as deploy@52.87.162.52
+ DEBUG [cc835c36] Command: [ -f /data/testapp/shared/config/database.yml ]
+ DEBUG [cc835c36] Finished in 0.249 seconds with exit status 0 (successful).
+ DEBUG [eff97100] Running [ -f /data/testapp/current/REVISION ] as deploy@52.87.162.52
+ DEBUG [eff97100] Command: [ -f /data/testapp/current/REVISION ]
+ DEBUG [eff97100] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [7f5097c0] Running /usr/bin/env cat /data/testapp/current/REVISION 2>/dev/null as deploy@52.87.162.52
+ DEBUG [7f5097c0] Command: /usr/bin/env cat /data/testapp/current/REVISION 2>/dev/null
+ DEBUG [7f5097c0] 	baf256675fd0de95059be600e7b3af8062418216
+ DEBUG [7f5097c0] Finished in 0.249 seconds with exit status 0 (successful).
+ DEBUG [3026be4b] Running [ -f /data/testapp/repo/HEAD ] as deploy@52.87.162.52
+ DEBUG [3026be4b] Command: [ -f /data/testapp/repo/HEAD ]
+ DEBUG [3026be4b] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /data/testapp/repo
+ DEBUG [1f92a3d5] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [1f92a3d5] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [1f92a3d5] Finished in 0.250 seconds with exit status 0 (successful).
+  INFO [3f3f69fe] Running /usr/bin/env git remote set-url origin git@github.com:vsirius/appname.git as deploy@52.87.162.52
+ DEBUG [3f3f69fe] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git remote set-url origin git@github.com:vsirius/appname.git )
+  INFO [3f3f69fe] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [bc1e58e3] Running /usr/bin/env git remote update --prune as deploy@52.87.162.52
+ DEBUG [bc1e58e3] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [bc1e58e3] 	Fetching origin
+ DEBUG [bc1e58e3] 	From github.com:vsirius/appname
+ DEBUG [bc1e58e3] 	 + baf2566...57f7661 master     -> master  (forced update)
+  INFO [bc1e58e3] Finished in 0.738 seconds with exit status 0 (successful).
+ DEBUG [967a396f] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [967a396f] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [967a396f] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [8148aee6] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504091206 as deploy@52.87.162.52
+ DEBUG [8148aee6] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env mkdir -p /data/testapp/releases/20170504091206 )
+  INFO [8148aee6] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [601c0e53] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/testapp/releases/20170504091206 as deploy@52.87.162.52
+ DEBUG [601c0e53] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /data/testapp/releases/20170504091206 )
+  INFO [601c0e53] Finished in 0.403 seconds with exit status 0 (successful).
+ DEBUG [24f467ab] Running if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [24f467ab] Command: if test ! -d /data/testapp/repo; then echo "Directory does not exist '/data/testapp/repo'" 1>&2; false; fi
+ DEBUG [24f467ab] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [372633b4] Running /usr/bin/env git rev-list --max-count=1 master as deploy@52.87.162.52
+ DEBUG [372633b4] Command: cd /data/testapp/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-testapp-production-sirius.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [372633b4] 	57f7661399913a8f0cc6f9e53a951c8c4a2c1982
+ DEBUG [372633b4] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [563a0f44] Running if test ! -d /data/testapp/releases/20170504091206; then echo "Directory does not exist '/data/testapp/releases/20170504091206'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [563a0f44] Command: if test ! -d /data/testapp/releases/20170504091206; then echo "Directory does not exist '/data/testapp/releases/20170504091206'" 1>&2; false; fi
+ DEBUG [563a0f44] Finished in 0.262 seconds with exit status 0 (successful).
+  INFO [bde99af4] Running /usr/bin/env echo "57f7661399913a8f0cc6f9e53a951c8c4a2c1982" >> REVISION as deploy@52.87.162.52
+ DEBUG [bde99af4] Command: cd /data/testapp/releases/20170504091206 && /usr/bin/env echo "57f7661399913a8f0cc6f9e53a951c8c4a2c1982" >> REVISION
+  INFO [bde99af4] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [1f6ca5d1] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504091206/config as deploy@52.87.162.52
+ DEBUG [1f6ca5d1] Command: /usr/bin/env mkdir -p /data/testapp/releases/20170504091206/config
+  INFO [1f6ca5d1] Finished in 0.268 seconds with exit status 0 (successful).
+ DEBUG [726a0020] Running [ -L /data/testapp/releases/20170504091206/config/database.yml ] as deploy@52.87.162.52
+ DEBUG [726a0020] Command: [ -L /data/testapp/releases/20170504091206/config/database.yml ]
+ DEBUG [726a0020] Finished in 0.248 seconds with exit status 1 (failed).
+ DEBUG [0aac3335] Running [ -f /data/testapp/releases/20170504091206/config/database.yml ] as deploy@52.87.162.52
+ DEBUG [0aac3335] Command: [ -f /data/testapp/releases/20170504091206/config/database.yml ]
+ DEBUG [0aac3335] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [5ec8ae0a] Running /usr/bin/env rm /data/testapp/releases/20170504091206/config/database.yml as deploy@52.87.162.52
+ DEBUG [5ec8ae0a] Command: /usr/bin/env rm /data/testapp/releases/20170504091206/config/database.yml
+  INFO [5ec8ae0a] Finished in 0.254 seconds with exit status 0 (successful).
+  INFO [bfc69e23] Running /usr/bin/env ln -s /data/testapp/shared/config/database.yml /data/testapp/releases/20170504091206/config/database.yml as deploy@52.87.162.52
+ DEBUG [bfc69e23] Command: /usr/bin/env ln -s /data/testapp/shared/config/database.yml /data/testapp/releases/20170504091206/config/database.yml
+  INFO [bfc69e23] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [3bbadc8f] Running /usr/bin/env mkdir -p /data/testapp/releases/20170504091206/tmp /data/testapp/releases/20170504091206 /data/testapp/releases/20170504091206/config /data/testapp/releases/20170504091206/public as deploy@52.87.162.52
+ DEBUG [3bbadc8f] Command: /usr/bin/env mkdir -p /data/testapp/releases/20170504091206/tmp /data/testapp/releases/20170504091206 /data/testapp/releases/20170504091206/config /data/testapp/releases/20170504091206/public
+  INFO [3bbadc8f] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [26302abe] Running [ -L /data/testapp/releases/20170504091206/tmp/sockets ] as deploy@52.87.162.52
+ DEBUG [26302abe] Command: [ -L /data/testapp/releases/20170504091206/tmp/sockets ]
+ DEBUG [26302abe] Finished in 0.248 seconds with exit status 1 (failed).
+ DEBUG [d8e5f0d4] Running [ -d /data/testapp/releases/20170504091206/tmp/sockets ] as deploy@52.87.162.52
+ DEBUG [d8e5f0d4] Command: [ -d /data/testapp/releases/20170504091206/tmp/sockets ]
+ DEBUG [d8e5f0d4] Finished in 0.248 seconds with exit status 1 (failed).
+  INFO [76f482a8] Running /usr/bin/env ln -s /data/testapp/shared/tmp/sockets /data/testapp/releases/20170504091206/tmp/sockets as deploy@52.87.162.52
+ DEBUG [76f482a8] Command: /usr/bin/env ln -s /data/testapp/shared/tmp/sockets /data/testapp/releases/20170504091206/tmp/sockets
+  INFO [76f482a8] Finished in 0.254 seconds with exit status 0 (successful).
+ DEBUG [ab8d6c55] Running [ -L /data/testapp/releases/20170504091206/log ] as deploy@52.87.162.52
+ DEBUG [ab8d6c55] Command: [ -L /data/testapp/releases/20170504091206/log ]
+ DEBUG [ab8d6c55] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [a015c2ae] Running [ -d /data/testapp/releases/20170504091206/log ] as deploy@52.87.162.52
+ DEBUG [a015c2ae] Command: [ -d /data/testapp/releases/20170504091206/log ]
+ DEBUG [a015c2ae] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [dcbf864a] Running /usr/bin/env rm -rf /data/testapp/releases/20170504091206/log as deploy@52.87.162.52
+ DEBUG [dcbf864a] Command: /usr/bin/env rm -rf /data/testapp/releases/20170504091206/log
+  INFO [dcbf864a] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO [2b2b4193] Running /usr/bin/env ln -s /data/testapp/shared/log /data/testapp/releases/20170504091206/log as deploy@52.87.162.52
+ DEBUG [2b2b4193] Command: /usr/bin/env ln -s /data/testapp/shared/log /data/testapp/releases/20170504091206/log
+  INFO [2b2b4193] Finished in 0.250 seconds with exit status 0 (successful).
+ DEBUG [efefdce5] Running [ -L /data/testapp/releases/20170504091206/config/puma ] as deploy@52.87.162.52
+ DEBUG [efefdce5] Command: [ -L /data/testapp/releases/20170504091206/config/puma ]
+ DEBUG [efefdce5] Finished in 0.248 seconds with exit status 1 (failed).
+ DEBUG [d179b640] Running [ -d /data/testapp/releases/20170504091206/config/puma ] as deploy@52.87.162.52
+ DEBUG [d179b640] Command: [ -d /data/testapp/releases/20170504091206/config/puma ]
+ DEBUG [d179b640] Finished in 0.265 seconds with exit status 1 (failed).
+  INFO [47570734] Running /usr/bin/env ln -s /data/testapp/shared/config/puma /data/testapp/releases/20170504091206/config/puma as deploy@52.87.162.52
+ DEBUG [47570734] Command: /usr/bin/env ln -s /data/testapp/shared/config/puma /data/testapp/releases/20170504091206/config/puma
+  INFO [47570734] Finished in 0.249 seconds with exit status 0 (successful).
+ DEBUG [3a49b81a] Running [ -L /data/testapp/releases/20170504091206/public/spree ] as deploy@52.87.162.52
+ DEBUG [3a49b81a] Command: [ -L /data/testapp/releases/20170504091206/public/spree ]
+ DEBUG [3a49b81a] Finished in 0.249 seconds with exit status 1 (failed).
+ DEBUG [5df76509] Running [ -d /data/testapp/releases/20170504091206/public/spree ] as deploy@52.87.162.52
+ DEBUG [5df76509] Command: [ -d /data/testapp/releases/20170504091206/public/spree ]
+ DEBUG [5df76509] Finished in 0.248 seconds with exit status 1 (failed).
+  INFO [938a346a] Running /usr/bin/env ln -s /data/testapp/shared/public/spree /data/testapp/releases/20170504091206/public/spree as deploy@52.87.162.52
+ DEBUG [938a346a] Command: /usr/bin/env ln -s /data/testapp/shared/public/spree /data/testapp/releases/20170504091206/public/spree
+  INFO [938a346a] Finished in 0.249 seconds with exit status 0 (successful).
+ DEBUG [f3fba6f3] Running if test ! -d /data/testapp/releases/20170504091206; then echo "Directory does not exist '/data/testapp/releases/20170504091206'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [f3fba6f3] Command: if test ! -d /data/testapp/releases/20170504091206; then echo "Directory does not exist '/data/testapp/releases/20170504091206'" 1>&2; false; fi
+ DEBUG [f3fba6f3] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [24a2b1e6] Running /usr/bin/env bundle check --path /data/testapp/shared/bundle as deploy@52.87.162.52
+ DEBUG [24a2b1e6] Command: cd /data/testapp/releases/20170504091206 && /usr/bin/env bundle check --path /data/testapp/shared/bundle
+ DEBUG [24a2b1e6] 	The following gems are missing
+ DEBUG [24a2b1e6] 	 * public_suffix (2.0.5)
+ DEBUG [24a2b1e6] 	 * addressable (2.5.1)
+ DEBUG [24a2b1e6] 	 * bindex (0.5.0)
+ DEBUG [24a2b1e6] 	 * byebug (9.0.6)
+ DEBUG [24a2b1e6] 	 * xpath (2.0.0)
+ DEBUG [24a2b1e6] 	 * capybara (2.13.0)
+ DEBUG [24a2b1e6] 	 * ffi (1.9.18)
+ DEBUG [24a2b1e6] 	 * childprocess (0.6.3)
+ DEBUG [24a2b1e6] 	 * rb-fsevent (0.9.8)
+ DEBUG [24a2b1e6] 	 * rb-inotify (0.9.8)
+ DEBUG [24a2b1e6] 	 * ruby_dep (1.5.0)
+ DEBUG [24a2b1e6] 	 * listen (3.1.5)
+ DEBUG [24a2b1e6] 	 * rubyzip (1.2.1)
+ DEBUG [24a2b1e6] 	 * websocket (1.2.4)
+ DEBUG [24a2b1e6] 	 * selenium-webdriver (3.4.0)
+ DEBUG [24a2b1e6] 	 * spring (2.0.1)
+ DEBUG [24a2b1e6] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [24a2b1e6] 	 * web-console (3.5.0)
+ DEBUG [24a2b1e6] 	Install missing gems with `bundle install`
+ DEBUG [24a2b1e6] Finished in 1.399 seconds with exit status 1 (failed).
+  INFO [d935b226] Running /usr/bin/env bundle install --path /data/testapp/shared/bundle --without development test --deployment as deploy@52.87.162.52
+ DEBUG [d935b226] Command: cd /data/testapp/releases/20170504091206 && /usr/bin/env bundle install --path /data/testapp/shared/bundle --without development test --deployment
+ DEBUG [d935b226] 	Fetching gem metadata from https://rubygems.org/
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	
+ DEBUG [d935b226] 	Fetching version metadata from https://rubygems.org/
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	
+ DEBUG [d935b226] 	Fetching dependency metadata from https://rubygems.org/
+ DEBUG [d935b226] 	.
+ DEBUG [d935b226] 	
+ DEBUG [d935b226] 	Using rake 12.0.0
+ DEBUG [d935b226] 	Using concurrent-ruby 1.0.5
+ DEBUG [d935b226] 	Using i18n 0.8.1
+ DEBUG [d935b226] 	Using minitest 5.10.1
+ DEBUG [d935b226] 	Using thread_safe 0.3.6
+ DEBUG [d935b226] 	Using builder 3.2.3
+ DEBUG [d935b226] 	Using erubi 1.6.0
+ DEBUG [d935b226] 	Using mini_portile2 2.1.0
+ DEBUG [d935b226] 	Using rack 2.0.1
+ DEBUG [d935b226] 	Using nio4r 2.0.0
+ DEBUG [d935b226] 	Using websocket-extensions 0.1.2
+ DEBUG [d935b226] 	Using mime-types-data 3.2016.0521
+ DEBUG [d935b226] 	Using arel 8.0.0
+ DEBUG [d935b226] 	Using coffee-script-source 1.12.2
+ DEBUG [d935b226] 	Using execjs 2.7.0
+ DEBUG [d935b226] 	Using method_source 0.8.2
+ DEBUG [d935b226] 	Using thor 0.19.4
+ DEBUG [d935b226] 	Using multi_json 1.12.1
+ DEBUG [d935b226] 	Using pg 0.20.0
+ DEBUG [d935b226] 	Using puma 3.8.2
+ DEBUG [d935b226] 	Using bundler 1.14.6
+ DEBUG [d935b226] 	Using sass 3.4.23
+ DEBUG [d935b226] 	Using tilt 2.0.7
+ DEBUG [d935b226] 	Using turbolinks-source 5.0.0
+ DEBUG [d935b226] 	Using tzinfo 1.2.3
+ DEBUG [d935b226] 	Using nokogiri 1.7.1
+ DEBUG [d935b226] 	Using rack-test 0.6.3
+ DEBUG [d935b226] 	Using sprockets 3.7.1
+ DEBUG [d935b226] 	Using websocket-driver 0.6.5
+ DEBUG [d935b226] 	Using mime-types 3.1
+ DEBUG [d935b226] 	Using coffee-script 2.4.1
+ DEBUG [d935b226] 	Using uglifier 3.2.0
+ DEBUG [d935b226] 	Using turbolinks 5.0.1
+ DEBUG [d935b226] 	Using activesupport 5.1.0
+ DEBUG [d935b226] 	Using loofah 2.0.3
+ DEBUG [d935b226] 	Using mail 2.6.5
+ DEBUG [d935b226] 	Using rails-dom-testing 2.0.2
+ DEBUG [d935b226] 	Using globalid 0.4.0
+ DEBUG [d935b226] 	Using activemodel 5.1.0
+ DEBUG [d935b226] 	Using jbuilder 2.6.3
+ DEBUG [d935b226] 	Using rails-html-sanitizer 1.0.3
+ DEBUG [d935b226] 	Using activejob 5.1.0
+ DEBUG [d935b226] 	Using activerecord 5.1.0
+ DEBUG [d935b226] 	Using actionview 5.1.0
+ DEBUG [d935b226] 	Using actionpack 5.1.0
+ DEBUG [d935b226] 	Using actioncable 5.1.0
+ DEBUG [d935b226] 	Using actionmailer 5.1.0
+ DEBUG [d935b226] 	Using railties 5.1.0
+ DEBUG [d935b226] 	Using sprockets-rails 3.2.0
+ DEBUG [d935b226] 	Using coffee-rails 4.2.1
+ DEBUG [d935b226] 	Using rails 5.1.0
+ DEBUG [d935b226] 	Using sass-rails 5.0.6
+ DEBUG [d935b226] 	Bundle complete! 16 Gemfile dependencies, 52 gems now installed.
+ DEBUG [d935b226] 	Gems in the groups development and test were not installed.
+ DEBUG [d935b226] 	Bundled gems are installed into /data/testapp/shared/bundle.
+  INFO [d935b226] Finished in 3.685 seconds with exit status 0 (successful).
+  INFO [5976c48e] Running /usr/bin/env ln -s /data/testapp/releases/20170504091206 /data/testapp/releases/current as deploy@52.87.162.52
+ DEBUG [5976c48e] Command: /usr/bin/env ln -s /data/testapp/releases/20170504091206 /data/testapp/releases/current
+  INFO [5976c48e] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [398958ec] Running /usr/bin/env mv /data/testapp/releases/current /data/testapp as deploy@52.87.162.52
+ DEBUG [398958ec] Command: /usr/bin/env mv /data/testapp/releases/current /data/testapp
+  INFO [398958ec] Finished in 0.248 seconds with exit status 0 (successful).
+ DEBUG [70bc91ba] Running /usr/bin/env ls -x /data/testapp/releases as deploy@52.87.162.52
+ DEBUG [70bc91ba] Command: /usr/bin/env ls -x /data/testapp/releases
+ DEBUG [70bc91ba] 	20170504075600	20170504080334	20170504084014	20170504085900	20170504090209
+20170504091206
+ DEBUG [70bc91ba] Finished in 0.249 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 52.87.162.52
+  INFO [bcaa445d] Running /usr/bin/env rm -rf /data/testapp/releases/20170504075600 as deploy@52.87.162.52
+ DEBUG [bcaa445d] Command: /usr/bin/env rm -rf /data/testapp/releases/20170504075600
+  INFO [bcaa445d] Finished in 0.263 seconds with exit status 0 (successful).
+ DEBUG [e384c7ec] Running if test ! -d /data/testapp/releases; then echo "Directory does not exist '/data/testapp/releases'" 1>&2; false; fi as deploy@52.87.162.52
+ DEBUG [e384c7ec] Command: if test ! -d /data/testapp/releases; then echo "Directory does not exist '/data/testapp/releases'" 1>&2; false; fi
+ DEBUG [e384c7ec] Finished in 0.248 seconds with exit status 0 (successful).
+  INFO [1aba4fa1] Running /usr/bin/env echo "Branch master (at 57f7661399913a8f0cc6f9e53a951c8c4a2c1982) deployed as release 20170504091206 by sirius" >> /data/testapp/revisions.log as deploy@52.87.162.52
+ DEBUG [1aba4fa1] Command: cd /data/testapp/releases && /usr/bin/env echo "Branch master (at 57f7661399913a8f0cc6f9e53a951c8c4a2c1982) deployed as release 20170504091206 by sirius" >> /data/testapp/revisions.log
+  INFO [1aba4fa1] Finished in 0.250 seconds with exit status 0 (successful).
